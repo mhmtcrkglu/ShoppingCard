@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\projects\ShoppingCard" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="ShoppingCard" t="IncludeRecursive">
+        <e p="appsettings.json" t="Include" />
+        <e p="appsettings.Production.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ShoppingCard.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="ShoppingCard.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="ShoppingCard.Core" t="IncludeRecursive">
+        <e p="BasketManager.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Helpers" t="Include">
+          <e p="BasketHelper.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IBasketOperations.cs" t="Include" />
+          <e p="ICampaignOperations.cs" t="Include" />
+          <e p="ICategoryOperations.cs" t="Include" />
+          <e p="ICouponOperations.cs" t="Include" />
+          <e p="IProductOperations.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="BasketModel.cs" t="Include" />
+          <e p="CampaignModel.cs" t="Include" />
+          <e p="CategoryModel.cs" t="Include" />
+          <e p="CouponModel.cs" t="Include" />
+          <e p="ProductModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ShoppingCard.Core.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Operations" t="Include">
+          <e p="BasketOperations.cs" t="Include" />
+          <e p="CampaignOperations.cs" t="Include" />
+          <e p="CategoryOperations.cs" t="Include" />
+          <e p="CouponOperations.cs" t="Include" />
+          <e p="ProductOperations.cs" t="Include" />
+        </e>
+        <e p="Settings.cs" t="Include" />
+        <e p="ShoppingCard.Core.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="ShoppingCard.sln" t="IncludeFlat" />
+      <e p="ShoppingCard.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ShoppingCard.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ShoppingCard.Tests.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
+      </e>
+    </e>
+    <e p="C:\Users\Mehmet\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="C:\Users\Mehmet\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.dll" t="Include" />
+    <e p="C:\Users\Mehmet\.nuget\packages\microsoft.testplatform.testhost\16.5.0\build\netcoreapp2.1\x64\testhost.exe" t="Include" />
+    <e p="C:\Users\Mehmet\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\Mehmet\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\Mehmet\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="C:\Users\Mehmet\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Mehmet\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ShoppingCard.-980179373.00" t="ExcludeRecursive" />
+  </component>
+</project>
