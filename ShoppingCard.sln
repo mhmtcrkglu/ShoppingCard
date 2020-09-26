@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCard", "ShoppingCard\ShoppingCard.csproj", "{18432541-6FD8-49E5-8CCB-023D865A8231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCard.Tests", "ShoppingCard.Tests\ShoppingCard.Tests.csproj", "{41E5B068-E72F-4857-A619-F14283987D22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18432541-6FD8-49E5-8CCB-023D865A8231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18432541-6FD8-49E5-8CCB-023D865A8231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18432541-6FD8-49E5-8CCB-023D865A8231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18432541-6FD8-49E5-8CCB-023D865A8231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E5B068-E72F-4857-A619-F14283987D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E5B068-E72F-4857-A619-F14283987D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E5B068-E72F-4857-A619-F14283987D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E5B068-E72F-4857-A619-F14283987D22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
