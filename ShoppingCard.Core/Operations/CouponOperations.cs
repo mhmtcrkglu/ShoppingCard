@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Interfaces;
 using ShoppingCard.Core.Models;
 
@@ -8,36 +9,35 @@ namespace ShoppingCard.Core.Operations
 {
     public class CouponOperations : ICouponOperations
     {
-        public static List<CouponModel> _couponList;
+        private static readonly List<CouponModel> CouponList = new List<CouponModel>();
 
         public CouponOperations()
         {
         }
-
         public CouponModel GetCoupon(Guid couponId)
         {
-            return _couponList.FirstOrDefault(a => a.Id == couponId);
+            return CouponList.FirstOrDefault(a => a.Id == couponId);
         }
-
-        public Guid AddCoupon(decimal minBasketPrice)
+        public CouponModel AddCoupon(CouponType type, int amount,decimal minBasketPrice)
         {
             var coupon = new CouponModel
             {
                 Id = Guid.NewGuid(),
+                Type = type,
+                Amount = amount,
                 MinBasketPrice = minBasketPrice
             };
-            _couponList.Add(coupon);
+            CouponList.Add(coupon);
 
-            return coupon.Id;
+            return coupon;
         }
-
         public bool RemoveCoupon(Guid couponId)
         {
             var coupon = GetCoupon(couponId);
 
             if (coupon != null)
             {
-                _couponList.Remove(coupon);
+                CouponList.Remove(coupon);
                 return true;
             }
 

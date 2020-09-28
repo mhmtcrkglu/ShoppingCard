@@ -15,12 +15,19 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
         <e p="ShoppingCard.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
       </e>
       <e p="ShoppingCard.Core" t="IncludeRecursive">
         <e p="BasketManager.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Enums" t="Include">
+          <e p="CampaignType.cs" t="Include" />
+          <e p="CouponType.cs" t="Include" />
+        </e>
         <e p="Helpers" t="Include">
           <e p="BasketHelper.cs" t="Include" />
         </e>

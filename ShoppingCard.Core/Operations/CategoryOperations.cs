@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
-using Microsoft.Extensions.Options;
 using ShoppingCard.Core.Interfaces;
 using ShoppingCard.Core.Models;
 
@@ -9,44 +9,35 @@ namespace ShoppingCard.Core.Operations
 {
     public class CategoryOperations : ICategoryOperations
     {
-        public Settings _settings;
-        public static List<CategoryModel> _categoryList;
+        private static readonly List<CategoryModel> CategoryList = new List<CategoryModel>();
         
-        public CategoryOperations(IOptions<Settings> options)
-        {
-            _settings = options.Value;
-        }
-
         public CategoryModel GetCategory(Guid categoryId)
         {
-            return _categoryList?.FirstOrDefault(a => a.Id == categoryId);
+            return CategoryList?.FirstOrDefault(a => a.Id == categoryId);
         }
-
-        public Guid AddCategory(string title)
+        public CategoryModel AddCategory(string title)
         {
             var category = new CategoryModel
             {
                 Id = Guid.NewGuid(),
                 Title = title
             };
-            _categoryList.Add(category);
+            CategoryList.Add(category);
 
-            return category.Id;
+            return category;
         }
-
         public bool RemoveCategory(Guid categoryId)
         {
             var category = GetCategory(categoryId);
 
             if (category != null)
             {
-                _categoryList.Remove(category);
+                CategoryList.Remove(category);
                 return true;
             }
 
             return false;
         }
-
         public bool BindCategory(Guid categoryId, Guid parentCategoryId)
         {
             var category = GetCategory(categoryId);
@@ -57,7 +48,7 @@ namespace ShoppingCard.Core.Operations
                 category.ParentCategory = parentCategory;
                 return true;
             }
-
+            Console.WriteLine("Category cannot be found");
             return false;
         }
     }

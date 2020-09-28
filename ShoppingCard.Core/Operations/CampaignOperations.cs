@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Interfaces;
 using ShoppingCard.Core.Models;
 
@@ -8,46 +9,41 @@ namespace ShoppingCard.Core.Operations
 {
     public class CampaignOperations : ICampaignOperations
     {
-        public static List<CampaignModel> _campaignList;
-        
-        public CampaignOperations()
-        {
-        }
+        private static readonly List<CampaignModel> CampaignList = new List<CampaignModel>();
 
         public CampaignModel GetCampaign(Guid campaignId)
         {
-            return _campaignList?.FirstOrDefault(a => a.Id == campaignId);
+            return CampaignList?.FirstOrDefault(a => a.Id == campaignId);
         }
-        
-        public Guid AddCampaign(string campaignTitle, int minimumAmount)
+        public CampaignModel AddCampaign(CampaignType type,decimal amount,string campaignTitle,int minimumCount)
         {
             CampaignModel campaign = new CampaignModel()
             {
                 Id = Guid.NewGuid(),
+                Type = type,
+                Amount = amount,
                 Title = campaignTitle,
-                MinimumProductCount = minimumAmount
+                MinimumProductCount = minimumCount
             };
-            _campaignList.Add(campaign);
-            return campaign.Id;
+            CampaignList.Add(campaign);
+            return campaign;
         }
-
         public bool RemoveCampaign(Guid campaignId)
         {
             var campaign = GetCampaign(campaignId);
             if (campaign != null)
             {
-                _campaignList.Remove(campaign);
+                CampaignList.Remove(campaign);
                 return true;
             }
             return false;
         }
-
-        public bool BindCategories(Guid campaignId, List<Guid> categoryIds)
+        public bool BindCategories(Guid campaignId, Guid categoryIds)
         {
             var campaign = GetCampaign(campaignId);
             if (campaign != null)
             {
-                campaign.CategoryIds = categoryIds;
+                campaign.CategoryIds = new List<Guid>{categoryIds};
                 return true;
             }
 

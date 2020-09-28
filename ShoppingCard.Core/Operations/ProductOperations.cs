@@ -8,18 +8,13 @@ namespace ShoppingCard.Core.Operations
 {
     public class ProductOperations : IProductOperations
     {
-        public static List<ProductModel> _productList;
-
-        public ProductOperations()
-        {
-        }
+        private static readonly List<ProductModel> ProductList = new List<ProductModel>();
 
         public ProductModel GetProduct(Guid productId)
         {
-            return _productList.FirstOrDefault(a => a.Id == productId);
+            return ProductList.FirstOrDefault(a => a.Id == productId);
         }
-
-        public Guid AddProduct(string title, decimal price)
+        public ProductModel AddProduct(string title, decimal price)
         {
             var product = new ProductModel
             {
@@ -27,35 +22,32 @@ namespace ShoppingCard.Core.Operations
                 Title = title,
                 Price = price
             };
-            _productList.Add(product);
+            ProductList.Add(product);
 
-            return product.Id;
+            return product;
         }
-
         public bool RemoveProduct(Guid productId)
         {
             var product = GetProduct(productId);
 
             if (product != null)
             {
-                _productList.Remove(product);
+                ProductList.Remove(product);
                 return true;
             }
 
             return false;
         }
-
-
-        public bool BindCategory(Guid productId, Guid categoryId)
+        public bool BindCategory(Guid productId, CategoryModel category)
         {
             var product = GetProduct(productId);
 
             if (product != null)
             {
-                product.CategoryId = categoryId;
+                product.Category = category;
                 return true;
             }
-
+            Console.WriteLine("Product cannot be found");
             return false;
         }
     }
