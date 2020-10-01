@@ -8,7 +8,7 @@ namespace ShoppingCard.Core.Operations
 {
     public class ProductOperations : IProductOperations
     {
-        private static readonly List<ProductModel> ProductList = new List<ProductModel>();
+        public static readonly List<ProductModel> ProductList = new List<ProductModel>();
 
         public ProductModel GetProduct(Guid productId)
         {
@@ -16,15 +16,21 @@ namespace ShoppingCard.Core.Operations
         }
         public ProductModel AddProduct(string title, decimal price)
         {
-            var product = new ProductModel
+            if (!string.IsNullOrEmpty(title))
             {
-                Id = Guid.NewGuid(),
-                Title = title,
-                Price = price
-            };
-            ProductList.Add(product);
+                var product = new ProductModel
+                {
+                    Id = Guid.NewGuid(),
+                    Title = title,
+                    Price = price
+                };
+                ProductList.Add(product);
 
-            return product;
+                return product;
+            }
+            Console.WriteLine("Ürün ismi boş geçilemez.");
+            return null;
+
         }
         public bool RemoveProduct(Guid productId)
         {
@@ -42,12 +48,12 @@ namespace ShoppingCard.Core.Operations
         {
             var product = GetProduct(productId);
 
-            if (product != null)
+            if (product != null && category != null && category.Id != Guid.Empty)
             {
                 product.Category = category;
                 return true;
             }
-            Console.WriteLine("Product cannot be found");
+            Console.WriteLine("Ürün - kategori boş geçilemez");
             return false;
         }
     }

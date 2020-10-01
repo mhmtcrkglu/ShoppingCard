@@ -1,7 +1,17 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=41E5B068_002DE72F_002D4857_002DA619_002DF14283987D22_002Ff_003ACampaignOperationTests_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
 	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
   &lt;Assembly Path="C:\Users\Mehmet\.nuget\packages\microsoft.extensions.hosting\5.0.0-rc.1.20451.14\lib\netstandard2.1\Microsoft.Extensions.Hosting.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\Mehmet\.nuget\packages\microsoft.extensions.hosting.abstractions\5.0.0-rc.1.20451.14\lib\netstandard2.1\Microsoft.Extensions.Hosting.Abstractions.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\Mehmet\.nuget\packages\microsoft.extensions.hosting.abstractions\5.0.0-preview.8.20407.11\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll" /&gt;&#xD;
   &lt;Assembly Path="C:\Users\Mehmet\.nuget\packages\microsoft.extensions.hosting\5.0.0-preview.8.20407.11\lib\netstandard2.1\Microsoft.Extensions.Hosting.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=0b231f5e_002D6964_002D4cc3_002Db407_002D85b04e0d61e1/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from CampaignOperationTests.cs" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;ProjectFile&gt;41E5B068-E72F-4857-A619-F14283987D22/f:CampaignOperationTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;41E5B068-E72F-4857-A619-F14283987D22/f:CategoryOperationTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;41E5B068-E72F-4857-A619-F14283987D22/f:ProductOperationTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;41E5B068-E72F-4857-A619-F14283987D22/f:CouponOperationTests.cs&lt;/ProjectFile&gt;&#xD;
+    &lt;ProjectFile&gt;41E5B068-E72F-4857-A619-F14283987D22/f:BasketOperationTests.cs&lt;/ProjectFile&gt;&#xD;
+  &lt;/Or&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

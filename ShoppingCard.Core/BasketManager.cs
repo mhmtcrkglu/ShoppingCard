@@ -1,6 +1,8 @@
 using System;
+using Newtonsoft.Json;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Interfaces;
+
 
 namespace ShoppingCard.Core
 {
@@ -60,7 +62,7 @@ namespace ShoppingCard.Core
             
             #region Create Basket
             
-            var basketId = _basketOperations.CreateBasket();
+            var basketId = _basketOperations.AddBasket();
             
             #endregion
             
@@ -107,6 +109,7 @@ namespace ShoppingCard.Core
             #endregion
             
             var basket = _basketOperations.CalculateBasket(basketId);
+            string output = JsonConvert.SerializeObject(basket);
             Console.WriteLine("Basket is ready, total price is {0}",basket.BasketTotal);
         }
     }

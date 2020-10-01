@@ -23,26 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56c1c12f-6f56-4091-877f-f515e4984d78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ShoppingCard.Core/Enums/CampaignType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShoppingCard.Core/Enums/CouponType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingCard.Tests/BasketOperationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingCard.Tests/CategoryOperationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingCard.Tests/CouponOperationTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShoppingCard.Tests/ProductOperationTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCard/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCard/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShoppingCard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShoppingCard/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/BasketManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/BasketManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Helpers/BasketHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Helpers/BasketHelper.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IBasketOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IBasketOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICampaignOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICampaignOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICategoryOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICategoryOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICouponOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICouponOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IProductOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IProductOperations.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Models/BasketModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Models/BasketModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Models/CampaignModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Models/CampaignModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Models/CouponModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Models/CouponModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Models/ProductModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Models/ProductModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Operations/BasketOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Operations/BasketOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CampaignOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CampaignOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CategoryOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CategoryOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CouponOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Operations/CouponOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/Operations/ProductOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/Operations/ProductOperations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCard.Core/ShoppingCard.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Core/ShoppingCard.Core.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCard.Tests/ShoppingCard.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Tests/ShoppingCard.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCard.Tests/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.Tests/CampaignOperationTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShoppingCard.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ShoppingCard.sln.DotSettings.user" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +57,18 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/74DAB51B-BB68-47F1-90B2-0FA8FF7ED63D/7/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ShoppingCard.Tests/CampaignOperationTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/projects/ShoppingCard/ShoppingCard.Core/Helpers/BasketHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EDAD86E2-0035-4DB5-A463-CD958DE39621/9/HostingAbstractionsHostExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/EDAD86E2-0035-4DB5-A463-CD958DE39621/E/IHost.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/ae/ff47ea08/ExecutionTimer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DF9E40E9-84C8-45C7-BA3E-5098763985A7/9/Host.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4065B38D-0F9F-44D9-8F53-F4C9102AF396/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/67FC3574-374D-469D-9648-9E52674383E0/2/Host.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/53E4BBFD-57EC-463A-AAF5-4057289EBEA5/4/GenericWebHostedService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7D67B43D-0BF4-4FAB-AC34-61119842A338/3/HostFilteringStartupFilter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/18D5A60D-361A-4AFD-A431-F772FA87FCC3/68/f4f14d69/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/0AED59B1-DA53-436C-969E-2BDC09D0915E/2/BackgroundService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ShoppingCard/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/53E4BBFD-57EC-463A-AAF5-4057289EBEA5/3/GenericWebHostBuilder.cs" root0="SKIP_HIGHLIGHTING" />
@@ -77,7 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ShoppingCard.Tests/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard/Models/CategoryModel.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard/Models/CouponModel.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard/Models/ProductModel.cs" />
@@ -98,27 +100,33 @@
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/IBasketOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IBasketOperations - Copy.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/BaseOperations.cs" />
-        <option value="$PROJECT_DIR$/ShoppingCard/Startup.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Models/ProductModel.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICategoryOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IProductOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Enums/CampaignType.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Enums/CouponType.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Models/CouponModel.cs" />
-        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/CouponOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICouponOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Models/BasketModel.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/IBasketOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard/Program.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard/Properties/launchSettings.json" />
-        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/CategoryOperations.cs" />
-        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/ProductOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Models/CampaignModel.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard/Startup.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/CategoryOperationTests.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/CategoryOperations.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/CouponOperationTests.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/ProductOperationTests.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/ProductOperations.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/CouponOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Helpers/BasketHelper.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Interfaces/ICampaignOperations.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/CampaignOperations.cs" />
-        <option value="$PROJECT_DIR$/ShoppingCard.Core/BasketManager.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/CampaignOperationTests.cs" />
         <option value="$PROJECT_DIR$/ShoppingCard.Core/Operations/BasketOperations.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Core/BasketManager.cs" />
+        <option value="$PROJECT_DIR$/ShoppingCard.Tests/BasketOperationTests.cs" />
       </list>
     </option>
   </component>
@@ -128,13 +136,13 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3498452" />
-    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3003096" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.ShoppingCard">
     <configuration name="ShoppingCard" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -164,7 +172,7 @@
       <updated>1601122772936</updated>
       <workItem from="1601122790107" duration="17558000" />
       <workItem from="1601147188780" duration="20511000" />
-      <workItem from="1601213216021" duration="29249000" />
+      <workItem from="1601213216021" duration="63378000" />
     </task>
     <task id="LOCAL-00001" summary="Projets and methods created.(ShoppingCard,ShoppingCard.Core,ShoppingCard.Tests)">
       <created>1601164508660</created>
@@ -173,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601164508660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="All functions created for Manager and operations.&#10;Configurations completed.">
+      <created>1601308005895</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601308005895</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +211,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Projets and methods created.(ShoppingCard,ShoppingCard.Core,ShoppingCard.Tests)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projets and methods created.(ShoppingCard,ShoppingCard.Core,ShoppingCard.Tests)" />
+    <MESSAGE value="All functions created for Manager and operations.&#10;Configurations completed." />
+    <option name="LAST_COMMIT_MESSAGE" value="All functions created for Manager and operations.&#10;Configurations completed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="165" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601215820415">
@@ -204,114 +220,135 @@
     </state>
     <state x="165" y="38" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601215820415" />
     <state x="176" y="-815" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138700712" />
-    <state width="473" height="393" key="DebuggerActiveHint" timestamp="1601307846103">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="730" height="562" key="DebuggerActiveHint" timestamp="1601568327143">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="473" height="393" key="DebuggerActiveHint/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307846103" />
+    <state width="730" height="562" key="DebuggerActiveHint/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568327143" />
+    <state width="519" height="393" key="DebuggerActiveHint/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419216362" />
     <state width="425" height="464" key="DebuggerActiveHint/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601137896057" />
-    <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog" timestamp="1601292525606">
+    <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog" timestamp="1601566720377">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" maximized="true" key="DiffContextDialog/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601292525606" />
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom" timestamp="1601307719232">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.0.bottom" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719232" />
+    <state width="1877" height="374" key="GridCell.Tab.0.bottom/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.0.bottom/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.0.center" timestamp="1601307719231">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.0.center" timestamp="1601568328187">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719231" />
+    <state width="1877" height="374" key="GridCell.Tab.0.center/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328187" />
+    <state width="1323" height="250" key="GridCell.Tab.0.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.0.center/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.0.left" timestamp="1601307719231">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.0.left" timestamp="1601568328187">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719231" />
+    <state width="1877" height="374" key="GridCell.Tab.0.left/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328187" />
+    <state width="1323" height="250" key="GridCell.Tab.0.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.0.left/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.0.right" timestamp="1601307719231">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.0.right" timestamp="1601568328187">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719231" />
+    <state width="1877" height="374" key="GridCell.Tab.0.right/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328187" />
+    <state width="1323" height="250" key="GridCell.Tab.0.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.0.right/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1601307721786">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307721786" />
+    <state width="1877" height="374" key="GridCell.Tab.1.bottom/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.1.bottom/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1601307721785">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.1.center" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307721785" />
+    <state width="1877" height="374" key="GridCell.Tab.1.center/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.1.center/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1601307721785">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.1.left" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307721785" />
+    <state width="1877" height="374" key="GridCell.Tab.1.left/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.1.left/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1601307721786">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.1.right" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307721786" />
+    <state width="1877" height="374" key="GridCell.Tab.1.right/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596444" />
     <state width="1397" height="303" key="GridCell.Tab.1.right/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1601307719233">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719233" />
+    <state width="1877" height="374" key="GridCell.Tab.2.bottom/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.2.bottom/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1601307719233">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.2.center" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719233" />
+    <state width="1877" height="374" key="GridCell.Tab.2.center/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.2.center/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1601307719232">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.2.left" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719232" />
+    <state width="1877" height="374" key="GridCell.Tab.2.left/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.2.left/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1601307719233">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.2.right" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719233" />
+    <state width="1877" height="374" key="GridCell.Tab.2.right/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.2.right/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.3.bottom/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596446" />
     <state width="1397" height="303" key="GridCell.Tab.3.bottom/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1601307719233">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.3.center" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719233" />
+    <state width="1877" height="374" key="GridCell.Tab.3.center/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.3.center/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1601307719233">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.3.left" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719233" />
+    <state width="1877" height="374" key="GridCell.Tab.3.left/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.3.left/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.3.right" timestamp="1601568328188">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.3.right/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328188" />
+    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596445" />
     <state width="1397" height="303" key="GridCell.Tab.3.right/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom" timestamp="1601568328189">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.4.bottom/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328189" />
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596446" />
     <state width="1397" height="303" key="GridCell.Tab.4.bottom/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.4.center" timestamp="1601568328189">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.4.center/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328189" />
+    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596446" />
     <state width="1397" height="303" key="GridCell.Tab.4.center/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.4.left" timestamp="1601568328189">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.4.left/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328189" />
+    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596446" />
     <state width="1397" height="303" key="GridCell.Tab.4.left/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
-    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1601307719234">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right" timestamp="1601568328189">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601307719234" />
+    <state width="1877" height="374" key="GridCell.Tab.4.right/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601568328189" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601419596446" />
     <state width="1397" height="303" key="GridCell.Tab.4.right/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601138731442" />
     <state x="296" y="137" key="Rider.ProjectTemplateDialog.Size" timestamp="1601159097689">
       <screen x="0" y="0" width="1366" height="728" />
@@ -326,39 +363,66 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="VCS.FileHistoryDialog/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601209157970" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1601164512647">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1601308009783">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601164512647" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601308009783" />
     <state width="691" height="372" key="XDebugger.FullValuePopup" timestamp="1601163012041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="691" height="372" key="XDebugger.FullValuePopup/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601163012041" />
-    <state x="378" y="25" width="641" height="679" key="find.popup" timestamp="1601305944734">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="225" y="-1044" width="901" height="971" key="find.popup" timestamp="1601564163017">
+      <screen x="-306" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="225" y="-1044" width="901" height="971" key="find.popup/0.0.1366.728/-306.-1080.1920.1040@-306.-1080.1920.1040" timestamp="1601564163017" />
     <state x="378" y="25" width="641" height="679" key="find.popup/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601305944734" />
     <state x="400" y="-871" width="644" height="801" key="find.popup/0.0.1366.728/2.-900.1440.860@2.-900.1440.860" timestamp="1601137931760" />
-    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1601306728673">
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup" timestamp="1601414017097">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601306728673" />
+    <state x="339" y="17" width="672" height="676" key="search.everywhere.popup/0.0.1366.728/2.-900.1440.860@0.0.1366.728" timestamp="1601414017097" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ShoppingCard.Core/BasketManager.cs</url>
-          <line>109</line>
-          <properties documentPath="C:\projects\ShoppingCard\ShoppingCard.Core\BasketManager.cs" initialLine="109">
+          <line>110</line>
+          <properties documentPath="C:\projects\ShoppingCard\ShoppingCard.Core\BasketManager.cs" initialLine="108">
             <startOffsets>
-              <option value="4391" />
+              <option value="4342" />
             </startOffsets>
             <endOffsets>
-              <option value="4467" />
+              <option value="4399" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="54" />
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ShoppingCard.Tests/BasketOperationTests.cs</url>
+          <line>389</line>
+          <properties documentPath="C:\projects\ShoppingCard\ShoppingCard.Tests\BasketOperationTests.cs" initialLine="389">
+            <startOffsets>
+              <option value="12164" />
+            </startOffsets>
+            <endOffsets>
+              <option value="12165" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ShoppingCard.Core/Operations/BasketOperations.cs</url>
+          <line>134</line>
+          <properties documentPath="C:\projects\ShoppingCard\ShoppingCard.Core\Operations\BasketOperations.cs" initialLine="134">
+            <startOffsets>
+              <option value="4938" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4939" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

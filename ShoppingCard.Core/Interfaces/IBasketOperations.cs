@@ -6,7 +6,7 @@ namespace ShoppingCard.Core.Interfaces
     public interface IBasketOperations
     {
         public BasketModel GetBasket(Guid basketId);
-        public Guid CreateBasket();
+        public Guid AddBasket();
         public bool BindProduct(Guid basketId, ProductModel product, int amount);
         public bool RemoveProduct(Guid basketId, Guid productId, int amount);
         public decimal CalculateTotalDeliveryPrice(BasketModel basket);

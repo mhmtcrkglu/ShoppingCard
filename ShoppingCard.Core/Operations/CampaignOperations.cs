@@ -9,25 +9,33 @@ namespace ShoppingCard.Core.Operations
 {
     public class CampaignOperations : ICampaignOperations
     {
-        private static readonly List<CampaignModel> CampaignList = new List<CampaignModel>();
+        public static List<CampaignModel> CampaignList = new List<CampaignModel>();
 
         public CampaignModel GetCampaign(Guid campaignId)
         {
             return CampaignList?.FirstOrDefault(a => a.Id == campaignId);
         }
-        public CampaignModel AddCampaign(CampaignType type,decimal amount,string campaignTitle,int minimumCount)
+
+        public CampaignModel AddCampaign(CampaignType type, decimal amount, string campaignTitle, int minimumCount)
         {
-            CampaignModel campaign = new CampaignModel()
+            if (amount >= 0 && minimumCount >= 0)
             {
-                Id = Guid.NewGuid(),
-                Type = type,
-                Amount = amount,
-                Title = campaignTitle,
-                MinimumProductCount = minimumCount
-            };
-            CampaignList.Add(campaign);
-            return campaign;
+                CampaignModel campaign = new CampaignModel()
+                {
+                    Id = Guid.NewGuid(),
+                    Type = type,
+                    Amount = amount,
+                    Title = campaignTitle,
+                    MinimumProductCount = minimumCount
+                };
+                CampaignList.Add(campaign);
+                return campaign;
+            }
+
+            Console.WriteLine("Kampanya eklenemedi. Mikar, minimum ürün tutarı negatif olamaz.");
+            return null;
         }
+
         public bool RemoveCampaign(Guid campaignId)
         {
             var campaign = GetCampaign(campaignId);
@@ -36,14 +44,16 @@ namespace ShoppingCard.Core.Operations
                 CampaignList.Remove(campaign);
                 return true;
             }
+
             return false;
         }
-        public bool BindCategories(Guid campaignId, Guid categoryIds)
+
+        public bool BindCategories(Guid campaignId, Guid categoryId)
         {
             var campaign = GetCampaign(campaignId);
-            if (campaign != null)
+            if (campaign != null && categoryId != Guid.Empty) 
             {
-                campaign.CategoryIds = new List<Guid>{categoryIds};
+                campaign.CategoryIds = new List<Guid> {categoryId};
                 return true;
             }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
+using System.Text.Json;
 using Microsoft.Extensions.Options;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Helpers;
@@ -13,7 +13,7 @@ namespace ShoppingCard.Core.Operations
     public class BasketOperations : IBasketOperations
     {
         private readonly Settings _settings;
-        private static readonly List<BasketModel> BasketList = new List<BasketModel>();
+        public static readonly List<BasketModel> BasketList = new List<BasketModel>();
 
         public BasketOperations(IOptions<Settings> options)
         {
@@ -24,7 +24,7 @@ namespace ShoppingCard.Core.Operations
         {
             return BasketList?.FirstOrDefault(a => a.Id == basketId);
         }
-        public Guid CreateBasket()
+        public Guid AddBasket()
         {
             BasketModel basket = new BasketModel();
             basket.Id = Guid.NewGuid();
@@ -61,14 +61,18 @@ namespace ShoppingCard.Core.Operations
 
             var product = basket.Products?.FirstOrDefault(a => a.Key.Id == productId);
 
-            if (product.HasValue)
+            if (product.Value.Key != null && product.Value.Value > 0)
             {
                 if (amount < product.Value.Value)
                 {
                     basket.Products[product.Value.Key] = product.Value.Value - amount;
                 }
+                else
+                {
+                    basket.Products.Keys.ToList().Remove(product.Value.Key);
+                }
 
-                basket.Products.Keys.ToList().Remove(product.Value.Key);
+                return true;
             }
 
             return false;
@@ -98,6 +102,7 @@ namespace ShoppingCard.Core.Operations
                 if (affectedProductIds.Any(a=>a == Guid.Empty) || affectedProductIds.Count <= 0)
                 {
                     Console.WriteLine("{0} could not be applied",campaign.Title);
+                    return false;
                 }
                
                 foreach (var product in basket.Products)
@@ -120,10 +125,11 @@ namespace ShoppingCard.Core.Operations
                         basket.DiscountTotal += campaignDiscount;
                     }
                 }
+                basket.Campaigns.Add(campaign);
+                return true;
             }
-            basket.Campaigns.Add(campaign);
 
-            return true;
+            return false;
         }
         public bool ApplyCouponToBasket(Guid basketId, CouponModel coupon)
         {

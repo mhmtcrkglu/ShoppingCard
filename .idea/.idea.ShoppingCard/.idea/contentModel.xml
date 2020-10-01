@@ -64,7 +64,11 @@
       </e>
       <e p="ShoppingCard.sln" t="IncludeFlat" />
       <e p="ShoppingCard.Tests" t="IncludeRecursive">
+        <e p="BasketOperationTests.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CampaignOperationTests.cs" t="Include" />
+        <e p="CategoryOperationTests.cs" t="Include" />
+        <e p="CouponOperationTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -72,8 +76,8 @@
             </e>
           </e>
         </e>
+        <e p="ProductOperationTests.cs" t="Include" />
         <e p="ShoppingCard.Tests.csproj" t="IncludeRecursive" />
-        <e p="UnitTest1.cs" t="Include" />
       </e>
     </e>
     <e p="C:\Users\Mehmet\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">

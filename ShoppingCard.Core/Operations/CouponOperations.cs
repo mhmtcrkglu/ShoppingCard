@@ -9,7 +9,7 @@ namespace ShoppingCard.Core.Operations
 {
     public class CouponOperations : ICouponOperations
     {
-        private static readonly List<CouponModel> CouponList = new List<CouponModel>();
+        public static readonly List<CouponModel> CouponList = new List<CouponModel>();
 
         public CouponOperations()
         {
@@ -20,16 +20,22 @@ namespace ShoppingCard.Core.Operations
         }
         public CouponModel AddCoupon(CouponType type, int amount,decimal minBasketPrice)
         {
-            var coupon = new CouponModel
+            if (amount >= 0 && minBasketPrice >= 0)
             {
-                Id = Guid.NewGuid(),
-                Type = type,
-                Amount = amount,
-                MinBasketPrice = minBasketPrice
-            };
-            CouponList.Add(coupon);
+                var coupon = new CouponModel
+                {
+                    Id = Guid.NewGuid(),
+                    Type = type,
+                    Amount = amount,
+                    MinBasketPrice = minBasketPrice
+                };
+                CouponList.Add(coupon);
+                
+                return coupon;
+            }
+            Console.WriteLine("Kupon eklenemedi. Mikar, minimum ürün tutarı negatif olamaz.");
+            return null;
 
-            return coupon;
         }
         public bool RemoveCoupon(Guid couponId)
         {
