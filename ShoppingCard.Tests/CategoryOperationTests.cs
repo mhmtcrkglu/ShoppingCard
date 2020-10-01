@@ -142,7 +142,7 @@ namespace ShoppingCard.Tests
             CategoryOperations.CategoryList.Add(parentCategoryDto);
 
             //Act
-            var result = _categoryOperations.BindCategory(categoryId,parentCategoryId);
+            var result = _categoryOperations.BindCategoryToCategory(categoryId,parentCategoryId);
 
             //Assert
             Assert.True(result);
@@ -162,7 +162,7 @@ namespace ShoppingCard.Tests
             CategoryOperations.CategoryList.Add(categoryDto);
 
             //Act
-            var result = _categoryOperations.BindCategory(categoryId,Guid.NewGuid());
+            var result = _categoryOperations.BindCategoryToCategory(categoryId,Guid.NewGuid());
 
             //Assert
             Assert.False(result);

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
 using Microsoft.Extensions.Options;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Helpers;
@@ -26,8 +25,10 @@ namespace ShoppingCard.Core.Operations
         }
         public Guid AddBasket()
         {
-            BasketModel basket = new BasketModel();
-            basket.Id = Guid.NewGuid();
+            var basket = new BasketModel
+            {
+                Id = Guid.NewGuid()
+            };
             BasketList.Add(basket);
             return basket.Id;
         }
@@ -61,7 +62,7 @@ namespace ShoppingCard.Core.Operations
 
             var product = basket.Products?.FirstOrDefault(a => a.Key.Id == productId);
 
-            if (product.Value.Key != null && product.Value.Value > 0)
+            if (product?.Key != null && product?.Value > 0)
             {
                 if (amount < product.Value.Value)
                 {
@@ -74,7 +75,7 @@ namespace ShoppingCard.Core.Operations
 
                 return true;
             }
-
+            Console.WriteLine("Product is not found");
             return false;
         }
         public decimal CalculateTotalDeliveryPrice(BasketModel basket)
@@ -128,7 +129,7 @@ namespace ShoppingCard.Core.Operations
                 basket.Campaigns.Add(campaign);
                 return true;
             }
-
+            Console.WriteLine("Campaign could not be applied. Please check campaign or product minimum count condition");
             return false;
         }
         public bool ApplyCouponToBasket(Guid basketId, CouponModel coupon)
@@ -158,7 +159,7 @@ namespace ShoppingCard.Core.Operations
 
                 return true;
             }
-            Console.WriteLine("coupon could not be applied to basket.");
+            Console.WriteLine("Coupon could not be applied to basket");
             return false;
         }
         public BasketModel CalculateBasket(Guid basketId)

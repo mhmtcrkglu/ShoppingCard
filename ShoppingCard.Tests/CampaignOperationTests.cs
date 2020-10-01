@@ -145,7 +145,7 @@ namespace ShoppingCard.Tests
             };
 
             //Act
-            var result = _campaignOperations.BindCategories(campaignId,categoryId);
+            var result = _campaignOperations.BindCampaignToCategory(campaignId,categoryId);
 
             //Assert
             Assert.True(result);
@@ -167,7 +167,7 @@ namespace ShoppingCard.Tests
             CampaignOperations.CampaignList.Add(campaignDto);
 
             //Act
-            var result = _campaignOperations.BindCategories(campaignId,Guid.Empty);
+            var result = _campaignOperations.BindCampaignToCategory(campaignId,Guid.Empty);
 
             //Assert
             Assert.False(result);

@@ -4,45 +4,47 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Serilog;
 using ShoppingCard.Core;
 
 namespace ShoppingCard
 {
-    class Program
+    static class Program
     {
         public static void Main(string[] args)
         {
-            var settings = GetConfigurationRoot(args).GetSection("CoreSettings").Get<AppSettings>();
+            var settings = GetConfigurationRoot(args).GetSection("Settings").GetSection("CoreSettings").Get<AppSettings>();
 
             try
             {
-                Log.Information($"{settings.Name} is starting...");
+                Console.WriteLine($"{settings.Name} is starting...");
                 var host = CreateHostBuilder(args).Build();
                 var svc = ActivatorUtilities.CreateInstance<BasketManager>(host.Services);
                 svc.Run();
             }
             catch (Exception exception)
             {
-                Log.Fatal(exception, $"{settings.Name} terminated unexpectedly...");
+                Console.WriteLine($"{settings.Name} terminated unexpectedly... Exception: {exception}");
             }
             finally
             {
-                Log.Warning($"{settings.Name} is stopping...");
-
-                Log.CloseAndFlush();
+                Console.WriteLine($"{settings.Name} is stopping...");
             }
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
+        private static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, config) => { config.AddJsonFile($"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json", false, true).AddEnvironmentVariables(); })
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                {
+                    config.AddJsonFile(
+                        $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "Production"}.json",
+                        false, true).AddEnvironmentVariables();
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder
                         .UseKestrel(o => o.AllowSynchronousIO = true)
                         .UseStartup<Startup>();
-                }).UseSerilog();
+                });
 
         private static IConfigurationRoot GetConfigurationRoot(string[] args)
         {

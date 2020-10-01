@@ -8,6 +8,6 @@ namespace ShoppingCard.Core.Interfaces
         public CategoryModel GetCategory(Guid categoryId);
         public CategoryModel AddCategory(string title);
         public bool RemoveCategory(Guid categoryId);
-        public bool BindCategory(Guid categoryId, Guid parentCategoryId);
+        public bool BindCategoryToCategory(Guid categoryId, Guid parentCategoryId);
     }
 }

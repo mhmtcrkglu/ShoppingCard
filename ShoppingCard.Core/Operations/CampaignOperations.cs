@@ -9,7 +9,7 @@ namespace ShoppingCard.Core.Operations
 {
     public class CampaignOperations : ICampaignOperations
     {
-        public static List<CampaignModel> CampaignList = new List<CampaignModel>();
+        public static readonly List<CampaignModel> CampaignList = new List<CampaignModel>();
 
         public CampaignModel GetCampaign(Guid campaignId)
         {
@@ -20,7 +20,7 @@ namespace ShoppingCard.Core.Operations
         {
             if (amount >= 0 && minimumCount >= 0)
             {
-                CampaignModel campaign = new CampaignModel()
+                var campaign = new CampaignModel()
                 {
                     Id = Guid.NewGuid(),
                     Type = type,
@@ -32,7 +32,7 @@ namespace ShoppingCard.Core.Operations
                 return campaign;
             }
 
-            Console.WriteLine("Kampanya eklenemedi. Mikar, minimum ürün tutarı negatif olamaz.");
+            Console.WriteLine("Campaign could not be added. Product amount, minimum product count cannot be negative");
             return null;
         }
 
@@ -44,19 +44,20 @@ namespace ShoppingCard.Core.Operations
                 CampaignList.Remove(campaign);
                 return true;
             }
-
+            Console.WriteLine("Campaign is not found");
             return false;
         }
 
-        public bool BindCategories(Guid campaignId, Guid categoryId)
+        public bool BindCampaignToCategory(Guid campaignId, Guid categoryId)
         {
             var campaign = GetCampaign(campaignId);
+            
             if (campaign != null && categoryId != Guid.Empty) 
             {
                 campaign.CategoryIds = new List<Guid> {categoryId};
                 return true;
             }
-
+            Console.WriteLine("Campaign is not found");
             return false;
         }
     }

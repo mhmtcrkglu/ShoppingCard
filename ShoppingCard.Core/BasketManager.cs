@@ -1,5 +1,4 @@
 using System;
-using Newtonsoft.Json;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Interfaces;
 
@@ -39,8 +38,8 @@ namespace ShoppingCard.Core
 
             #region BindCategoryToCategory
 
-            _categoryOperations.BindCategory(tShirt.Id, man.Id);
-            _categoryOperations.BindCategory(beauty.Id, woman.Id);
+            _categoryOperations.BindCategoryToCategory(tShirt.Id, man.Id);
+            _categoryOperations.BindCategoryToCategory(beauty.Id, woman.Id);
 
             #endregion
             
@@ -82,8 +81,8 @@ namespace ShoppingCard.Core
             
             #region BindCampaignToCategory
             
-            _campaignOperations.BindCategories(manBasketCampaign.Id,tShirt.Id);
-            _campaignOperations.BindCategories(beautyCampaign.Id, beauty.Id);
+            _campaignOperations.BindCampaignToCategory(manBasketCampaign.Id,tShirt.Id);
+            _campaignOperations.BindCampaignToCategory(beautyCampaign.Id, beauty.Id);
             
             #endregion
 
@@ -109,7 +108,7 @@ namespace ShoppingCard.Core
             #endregion
             
             var basket = _basketOperations.CalculateBasket(basketId);
-            string output = JsonConvert.SerializeObject(basket);
+            
             Console.WriteLine("Basket is ready, total price is {0}",basket.BasketTotal);
         }
     }

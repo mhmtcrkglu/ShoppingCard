@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +17,7 @@ namespace ShoppingCard
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        private IConfiguration Configuration { get; }
 
         public void ConfigureServices(IServiceCollection services)
         {
@@ -45,22 +43,6 @@ namespace ShoppingCard
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            #region Core Configuration
-
-            ConfigureApplication(env, _settings);
-
-            #endregion
-        }
-
-        private static IEnumerable<Assembly> GetAssemblies()
-        {
-            yield return typeof(Startup).GetTypeInfo().Assembly;
-        }
-
-        public static void ConfigureApplication(
-            IWebHostEnvironment env,
-            Settings settings)
         {
         }
     }

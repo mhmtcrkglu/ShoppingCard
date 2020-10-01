@@ -12,7 +12,7 @@ namespace ShoppingCard.Core.Models
         public decimal CouponTotal { get; set; }
         public decimal BasketTotal { get; set; }
         public decimal DeliveryPrice { get; set; }
-        public List<CouponModel> Coupons { get; set; } = new List<CouponModel>();
-        public List<CampaignModel> Campaigns { get; set; } = new List<CampaignModel>();
+        public List<CouponModel> Coupons { get; } = new List<CouponModel>();
+        public List<CampaignModel> Campaigns { get; } = new List<CampaignModel>();
     }
 }

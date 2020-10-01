@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection.PortableExecutable;
 using Microsoft.Extensions.Options;
-using Moq;
 using ShoppingCard.Core;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Models;
@@ -13,7 +11,7 @@ namespace ShoppingCard.Tests
 {
     public class BasketOperationTests
     {
-        private readonly BasketOperations _basketOperations = new BasketOperations(Options.Create<Settings>(
+        private readonly BasketOperations _basketOperations = new BasketOperations(Options.Create(
             new Settings()
             {
                 CalculatorSettings = new CalculatorSettings()

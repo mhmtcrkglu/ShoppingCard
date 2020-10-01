@@ -10,10 +10,7 @@ namespace ShoppingCard.Core.Operations
     public class CouponOperations : ICouponOperations
     {
         public static readonly List<CouponModel> CouponList = new List<CouponModel>();
-
-        public CouponOperations()
-        {
-        }
+        
         public CouponModel GetCoupon(Guid couponId)
         {
             return CouponList.FirstOrDefault(a => a.Id == couponId);
@@ -33,7 +30,8 @@ namespace ShoppingCard.Core.Operations
                 
                 return coupon;
             }
-            Console.WriteLine("Kupon eklenemedi. Mikar, minimum ürün tutarı negatif olamaz.");
+            Console.WriteLine("Coupon could not be added. Coupon amount, minimum product price cannot be negative");
+
             return null;
 
         }
@@ -46,7 +44,7 @@ namespace ShoppingCard.Core.Operations
                 CouponList.Remove(coupon);
                 return true;
             }
-
+            Console.WriteLine("Coupon is not found");
             return false;
         }
     }

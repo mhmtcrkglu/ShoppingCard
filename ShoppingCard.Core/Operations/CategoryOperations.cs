@@ -28,7 +28,7 @@ namespace ShoppingCard.Core.Operations
 
                 return category;
             }
-            Console.WriteLine("Kategori eklenemedi. Kampanya ismi boş olamaz.");
+            Console.WriteLine("Category cannot be added. Category name should not be blank");
             return null;
         }
 
@@ -41,11 +41,11 @@ namespace ShoppingCard.Core.Operations
                 CategoryList.Remove(category);
                 return true;
             }
-
+            Console.WriteLine("Category cannot be found");
             return false;
         }
 
-        public bool BindCategory(Guid categoryId, Guid parentCategoryId)
+        public bool BindCategoryToCategory(Guid categoryId, Guid parentCategoryId)
         {
             var category = GetCategory(categoryId);
             var parentCategory = GetCategory(parentCategoryId);

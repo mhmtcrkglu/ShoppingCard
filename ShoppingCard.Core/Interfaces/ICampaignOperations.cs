@@ -9,6 +9,6 @@ namespace ShoppingCard.Core.Interfaces
         public CampaignModel GetCampaign(Guid campaignId);
         public CampaignModel AddCampaign(CampaignType type,decimal amount,string campaignTitle,int minimumCount);
         public bool RemoveCampaign(Guid campaignId);
-        public bool BindCategories(Guid campaignId, Guid categoryId);
+        public bool BindCampaignToCategory(Guid campaignId, Guid categoryId);
     }
 }

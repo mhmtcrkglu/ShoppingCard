@@ -28,7 +28,7 @@ namespace ShoppingCard.Core.Operations
 
                 return product;
             }
-            Console.WriteLine("Ürün ismi boş geçilemez.");
+            Console.WriteLine("Product name should not be blank");
             return null;
 
         }
@@ -41,7 +41,7 @@ namespace ShoppingCard.Core.Operations
                 ProductList.Remove(product);
                 return true;
             }
-
+            Console.WriteLine("Product is not found");
             return false;
         }
         public bool BindCategory(Guid productId, CategoryModel category)
@@ -53,7 +53,7 @@ namespace ShoppingCard.Core.Operations
                 product.Category = category;
                 return true;
             }
-            Console.WriteLine("Ürün - kategori boş geçilemez");
+            Console.WriteLine("Product, category should not be blank");
             return false;
         }
     }

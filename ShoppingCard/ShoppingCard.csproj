@@ -15,9 +15,6 @@
       <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0-rc.1.20451.14" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0-rc.1.20451.14" />
       <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.0.0" />
-      <PackageReference Include="Serilog.Extensions.Hosting" Version="3.1.0" />
-      <PackageReference Include="Serilog.Settings.Configuration" Version="3.2.0-dev-00244" />
-      <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0-dev-00839" />
     </ItemGroup>
 
 </Project>
