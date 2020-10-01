@@ -1,6 +1,9 @@
 using System;
+using System.Linq;
+using System.Text;
 using ShoppingCard.Core.Enums;
 using ShoppingCard.Core.Interfaces;
+using ShoppingCard.Core.Models;
 
 
 namespace ShoppingCard.Core
@@ -108,8 +111,36 @@ namespace ShoppingCard.Core
             #endregion
             
             var basket = _basketOperations.CalculateBasket(basketId);
-            
-            Console.WriteLine("Basket is ready, total price is {0}",basket.BasketTotal);
+
+            Output(basket);
+        }
+
+        private void Output(BasketModel basket)
+        {
+            var result = new StringBuilder();
+            result.AppendLine("Basket Detail:");
+            result.AppendLine("Product:");
+            foreach (var product in basket.Products)
+            {
+                result.AppendLine("Name: " + product.Key.Title + " Amount: " + product.Value);
+            }
+            result.AppendLine("Campaign:");
+            foreach (var campaign in basket.Campaigns)
+            {
+                result.AppendLine("Name: " + campaign.Title);
+            }
+            result.AppendLine("Coupon:");
+            foreach (var coupon in basket.Coupons)
+            {
+                result.AppendLine("Name: User Coupon- " + coupon.Id);
+            }
+            result.AppendLine("Sub Total: " + basket.SubTotal);
+            result.AppendLine("Delivery Price: " + basket.DeliveryPrice);
+            result.AppendLine("Campaign Total: " + basket.DiscountTotal);
+            result.AppendLine("Coupon Total: " + basket.CouponTotal);
+            result.AppendLine("-------------------------------------");
+            result.AppendLine("Total: " + basket.BasketTotal);
+            Console.WriteLine(result);
         }
     }
 }
